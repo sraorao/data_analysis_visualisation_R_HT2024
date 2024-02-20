@@ -92,12 +92,9 @@ plot(x = owid_covid_hdi_class$date, y = owid_covid_hdi_class$total_deaths_per_mi
 
 # PROBLEM SET for Part I ####
 # Q: Filter the owid_covid dataset for only 4 countries: UK, US, Germany, Belgium
-four_countries = c("United Kingdom", "Belgium", "Germany", "United States")
-owid_covid %>%
-  filter(location %in% four_countries) %>% View()
-owid_covid %>% filter(location == "United Kingdom" | location == "Belgium" | location == "Germany" | location == "United States")
+
 # Q: Plot test positivity rate in the UK across time, as a line graph
-plot(x = owid_covid_uk$date, y = owid_covid_uk$positive_rate, type = "l")
+
 
 # Q: Create a new column in the dataset where the value should be "low" or "high" 
 # depending on whether the population is lower or higher than the median population respectively
